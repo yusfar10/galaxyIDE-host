@@ -1,0 +1,317 @@
+:root {
+  --gold: #dfa31f;
+  --white: #ffffffd1;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  background-color: #1e1e1e;
+  height: 100vh;
+}
+.navbar {
+  color: var(--white);
+}
+
+.navbar-wrepper {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-items: center;
+  height: 80px;
+  color: var(--white);
+  background-image: linear-gradient(
+    to left,
+    rgba(184, 130, 6, 0.2),
+    rgba(11, 88, 89, 0.6)
+  );
+  z-index: 10000;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.navbar-wrepper .circle {
+  width: 30px; /* Lebar lingkaran */
+  height: 30px; /* Tinggi lingkaran, sama dengan lebar */
+  background-color: var(--gold); /* Warna lingkaran */
+  border-radius: 50%; /* Membuat elemen menjadi lingkaran */
+}
+.navbar-wrepper span {
+  color: var(--white);
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.nav-ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-ul li a {
+  color: var(--white);
+}
+
+.img-nav {
+  width: 100%;
+  opacity: 0.5;
+  filter: brightness(60%);
+}
+
+.header {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.main-wrapper {
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+}
+.hero-text {
+  position: absolute;
+  top: 245px;
+  font-family: "Righteous", sans-serif;
+  font-size: 60px;
+  width: 60%;
+}
+.ourTeam {
+  position: absolute;
+  top: 405px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  word-spacing: 10px;
+  color: var(--gold);
+}
+.ourTeam span {
+  color: var(--white);
+}
+.Created {
+  position: absolute;
+  top: 750px;
+  text-align: center;
+  width: 50%;
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+}
+.Created span {
+  color: var(--gold);
+  font-style: italic;
+}
+
+/* MAIN */
+.hero-main {
+  background-color: #1e1e1e;
+  position: relative;
+  height: 100vh;
+}
+
+.hero-main .hero-wrapper {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  padding: 50px 0;
+}
+
+.hero-main .hero-wrapper .myGallery {
+  font-size: 60px;
+  font-family: "Righteous", sans-serif;
+  color: var(--white);
+  padding-top: 35px;
+}
+
+.hero-main .hero-wrapper .jejak-visual {
+  color: var(--gold);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  line-height: 35px;
+}
+
+/* Content Best img*/
+.content-best {
+  margin: 35px;
+  display: flex;
+  scrollbar-color: transparent transparent;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  background-color: #ffffffd1;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.content-best-img .imgcontent {
+  /* border: 1px solid #dfa31f; */
+  border-radius: 20px;
+  padding: 10px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+/* Button slide */
+.arrows {
+  position: absolute;
+  top: 35%;
+  right: 68%;
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+  max-width: 50%;
+}
+.arrows button {
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #ffffffd1;
+  font-family: "Ubuntu";
+  color: #dfa31f;
+  background-color: #1e1e1e;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.arrows button:hover {
+  background-color: #dfa31f;
+  color: var(--white);
+  border: 1px solid #1e1e1e;
+}
+/* button onepoes */
+.arrows-one-poes, .arrows-x-poes1, .arrows-x-poes2, .arrows-uinssc {
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 50%;
+  justify-content: center;
+}
+.arrows-one-poes button, .arrows-x-poes1 button, .arrows-x-poes2 button, .arrows-uinssc button{
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #ffffffd1;
+  font-family: "Ubuntu";
+  color: #dfa31f;
+  background-color: #1e1e1e;
+  cursor: pointer;
+  transition: 0.3s;
+}
+/* button xpoes */
+
+
+.one-poes {
+  color: var(--gold);
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.one-poes-img {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  scrollbar-color: transparent transparent;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.one-poes-img .history-one-poes {
+  border-radius: 20px;
+  padding: 10px;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+/* x-poes */
+.x-poes {
+  color: var(--gold);
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.x-poes-img1 {
+  margin: 35px;
+  display: flex;
+  scrollbar-color: transparent transparent;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  background-color: #ffffffd1;
+  box-shadow: 8px 8px 1px rgb(25, 74, 91);
+  border-radius: 20px;
+  padding: 10px;
+}
+.x-poes-wrapper .x-poes-content {
+  border-radius: 20px;
+  padding: 10px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.x-poes-img2 {
+  margin: 35px;
+  display: flex;
+  scrollbar-color: transparent transparent;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  background-color: #ffffffd1;
+  box-shadow: 8px 8px 1px rgb(25, 74, 91);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.text-uinssc{
+  color: var(--gold);
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 37px;
+}
+.uinssc-container, .x-poes-container{
+  background-color: #ffffffd1;
+  border-radius: 20px;
+  padding: 15px 0px;
+  margin: 1rem 0px;
+}
+
+.uinssc-img1, .uinssc-img2, .uinssc-img3{
+  margin: 35px;
+  display: flex;
+  scrollbar-color: transparent transparent;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  background-color: #ffffffd1;
+  box-shadow: 8px 8px 1px rgb(25, 74, 91);
+  border-radius: 20px;
+  padding: 10px;
+}
+.uinssc-wrapper .uinssc-content {
+  border-radius: 20px;
+  padding: 10px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+section{
+  margin: 500px;
+  height: 500px;
+  position: relative;
+}
+.expo{
+  color: var(--gold);
+}
